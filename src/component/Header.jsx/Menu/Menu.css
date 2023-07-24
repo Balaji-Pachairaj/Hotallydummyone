@@ -1,0 +1,50 @@
+.menuBox{
+    position: absolute;
+    top : 0 ;
+    left: 0;
+
+    z-index: 100;
+    width: 400px;
+    height: max-content;
+    background-color: #FCFFB2;
+
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    animation: slideFromLeft 0.3s linear ;
+}
+
+a{
+    text-decoration: none;
+    color : black;
+}
+
+.menuBox h1 {
+    margin-bottom: 1.5rem;
+
+}
+.closeButton{
+    position: absolute;
+    top: 0;
+    right: 1rem;
+}
+
+
+
+@media (width < 550px) {
+    .menuBox{
+        width: 100%;
+    } 
+}
+
+
+@keyframes slideFromLeft {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0.6;
+    }
+
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,76 @@
+.cardBox {
+     width: 200px;
+
+     background-color:white;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;     
+     animation: slideUp 0.4s linear;
+
+
+        }
+.imgBox {
+     height: 10rem;
+}
+.buttonBox {
+     height: 50px;
+}
+
+.qualityBox {
+     width: 50px;
+
+     display: flex;
+     margin-left: 3.4rem;
+}
+
+.qualityBox button {
+     border: 1px solid black;
+     background-color: #a0bfe0;
+     font-weight: 800;
+     font-size: 1.1rem;
+     color : white ;
+     background-color : #4F4557 ;
+}
+.qualityBox button:hover {
+     background-color: #1b1811;
+     color: white;
+}
+
+.qualityBox input {
+     border: 1px solid black;
+     border-left: 0;
+     border-right: 0;
+     width: 2.5rem;
+     margin: 0;
+     padding: 0 5px;
+}
+
+@keyframes slideUp {
+     from {
+          transform: translateY(2rem);
+          opacity: 0.5;
+     }
+     to {
+     }
+}
+
+/* Item list */
+
+.itemList {
+     margin-top: 2rem;
+     padding: 2rem;
+     width: 80%;
+
+     background-color: rgb(255, 225, 148);
+}
+
+@media (width < 700px) {
+     .itemList {
+          width: 90%;
+     }
+}
+
+.submitBox {
+    margin-top: 1rem;
+     width: max-content;
+     padding: 0.5rem;
+
+     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;}

@@ -1,0 +1,76 @@
+.cardTable {
+    overflow: scroll;
+    border: 1px solid rgb(149, 144, 144) ;
+
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    animation : slideUp ease-in 0.7s;
+}
+
+@keyframes slideUp {
+    from {
+         transform: translateY(2rem);
+         opacity: 0.5;
+    }
+    to {
+    }
+}
+
+
+.tableBox{
+    width: 100%;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+}
+
+.headerBox{
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+ 
+
+}
+.Sno{
+   min-width: 4rem;
+}
+.indivList{
+    min-width: 10rem;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* Status Bar */
+
+.statusBar{
+    width: 7rem;
+    height: 2.5rem;
+    overflow: hidden;
+}
+
+
+.status{
+    position: relative;
+}
+.dropdown{
+    z-index: 100;
+    width: 100%;
+    padding: 0.1rem;
+    position: absolute;
+
+    animation : 0.2s sildedown;
+}
+
+
+@keyframes sildedown {
+    from {
+        transform: translateY(-3rem);
+    }
+    to{
+
+    }
+}
+/* Filter */
